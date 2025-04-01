@@ -1,0 +1,475 @@
+*{
+ margin: 0;
+padding: 0;
+font-family: 'Univers Next Pro', sans-serif;                                              
+}
+
+body{
+background-image: url("Images/Landing-page-image.jpg");
+background-repeat: no-repeat;
+     background-color: rgb(228, 228, 228);
+     /* background-position-y:100%;
+     background-position-x:70% ; */
+     background-size: 80%;
+     background-position: bottom right;
+     /* background-position: top 555px;   */
+    
+     /* add max and min sizes add media queries */
+
+}
+
+/*overwrite with inline css on nessessary pages */
+.navbar{
+width: 100%;
+/* margin-left: 0px;
+padding-right: 20px; */
+position:fixed ;
+padding: 10px 10px;
+background: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100; /*double check this and add more notes for each change* can add navbar usin js but if js doesnt work navbar disappears consider doing boh */
+border-bottom: 1px solid rgb(195, 195, 195);
+}
+.navbar ul {
+width: 100%;
+list-style: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+/* padding-left: 20px;
+padding-right: 20px; */
+
+/* padding-bottom: 20px; */
+}
+.navbar li{
+    height: 50px;
+}
+/* .navbar li:hover{
+    border-bottom: 3px solid rgb(195, 195, 195);
+} */
+
+.navbar a {
+height: 100%;
+ text-decoration: none;  
+ padding: 0 30px;
+ display: flex;
+ align-items: center; 
+ color: black;
+ font-weight: lighter;
+
+}
+.navbar :first-child {
+    margin-right: auto;
+}
+
+.navbar a:hover{
+    font-weight: 400 ;
+}
+.Nominate-nav :hover{
+    font-weight: 500;
+    background-color: red;
+    color: white;
+}
+
+/* 
+.progress-bar{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+} */
+.progress-bar-demo{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.step{
+    margin: 40px;
+    text-align: center;
+}
+.step h3{
+    font-weight: 200;
+}
+.step-text{
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.bullet{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #D7D8D6;
+    color: white; 
+    display: inline-block;
+    position: relative;
+    
+
+}
+.bullet p{
+  font-size: 20px; 
+  padding-top:2.5px;
+
+}
+
+#first{
+    background-color:#E31E22;
+}
+/* .bullet-line{
+    content: '';
+    position:absolute;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+} */
+
+
+/*Landing page */
+
+.Title-page{
+    
+    display:grid;
+     width: 50%;
+    
+}
+.Title-page h1{
+font-weight: 300;
+font-size: 80px;
+}
+.Title-page p{
+ padding-top: 40px;
+ display: flex;
+ flex-direction: row;
+ width: 75%;
+ font-weight: lighter;
+}
+
+.Intro-page{
+   
+    border-style: none;
+    margin-left: 100px;
+    margin-right: 50px;
+   
+  
+}
+
+.Intro-page a{
+    margin-top: 80px;
+}
+
+.intro-button-element{
+/* margin-top: 20px; */
+margin-bottom: 40px;
+display: inline-flex;
+gap: 10px;
+}
+
+/* .intro-button-element :hover{
+    color:black;
+    background-color: white;
+    border:2px solid black;
+} */
+
+
+.nomination-button { 
+    background-color:#E31E22;
+    border: none;
+    color: white; 
+    padding: 20px 34px;
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 20px;
+    margin: 4px 2px; 
+    cursor: pointer;
+  
+ }
+ .nomination-button:hover {
+    background-color: #BA1110;
+}
+ .View-button{
+    background-color:white;
+    border: 2px solid black ;
+    color:black; 
+    padding: 20px 34px;
+    text-align: center; 
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px; 
+    cursor: pointer;
+ }
+
+ .View-button:hover{
+    background-color: #EDEDED;
+}
+
+
+/*Landing page end */
+
+/*Nomaination Form page */
+
+.nominationForm-container{
+  
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+
+.Form-page{
+    background-color: rgb(255, 255, 255);  
+    width: 65%;
+    margin-top: 90px ;
+    border-style: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* padding-top: 50px;
+    padding-left: 0px; */
+    align-items: center;
+}
+.Form-page form{
+    font-weight: 100;
+    font-size: 25px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    padding: 80px;
+    }
+/* .Form-page{} */
+
+.Form-page p.first-line{
+    padding-bottom: 40px;
+}
+
+
+.Form-page h1{
+    padding-bottom: 5px;
+    font-weight: 300;
+}   
+.Form-page p{
+    padding-bottom: 10px;
+    font-size: medium;
+}   
+.Form-page.categories{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}   
+#nomineeNames{
+    padding-bottom: 60px;
+}   
+
+.Form-page [type=text]{
+    width: 100%;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#Nomination-reason{
+    padding-bottom: 80px;
+}
+
+.Form-page select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* appearance: none; */
+    
+}
+.Form-page select:hover{
+  background-color: #D7D8D6;
+  cursor: pointer;
+    
+}
+
+.Good-example{
+    background-color:#E5F6EF;
+    border-left: 6px solid #28B67A;
+}
+.Good-example p{
+    padding-top: 20px;
+}
+
+
+.Good-example-text-element{
+    padding: 20px;
+    color: #176A47; 
+}
+.Good-example-text-element h3{
+   font-weight: 300; 
+}
+.Bad-example-text-element{
+    padding: 20px;
+}
+
+
+.Bad-example{
+    background-color:#fdf1f4;
+    border-left: 6px solid red;
+}
+
+.Bad-example-text-element{
+    padding: 20px;
+    color: #BA1110
+}
+.Bad-example-text-element h3{
+    font-weight: 300; 
+ }
+ .Bad-example p{
+    padding-top: 20px;
+}
+
+#make-nomination{ 
+    background-color:#E31E22;
+    border: none;
+    color: white; 
+    padding: 20px 34px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px; 
+    cursor: pointer;
+ }
+ #make-nomination:hover{
+    color:white;
+    background-color:#BA1110;
+}
+ #save-draft{ 
+    background-color:white;
+    border: 2px solid black ;
+    color:black; 
+    padding: 20px 34px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px; 
+    cursor: pointer;
+ }
+ #save-draft:hover{
+    color:black;
+    background-color: #D7D8D6;
+
+ }
+ /*Nomination Form page end */
+
+ /* Category page start*/
+
+ .category-container{
+ padding-top: 150px;
+
+ }
+ .category-header{
+    padding-left: 40px
+ }
+ .category-header h1{
+    font-weight: 500
+ }
+.category-header p{
+    padding-top: 10px;
+    font-weight: 100;
+}
+/* .category-cards{
+margin-top: 100px;
+margin-left: 40px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 50px 50px 50px 50px;
+column-gap: 150px;
+row-gap: 150px;
+align-items: center;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+
+} */
+.category-cards{
+    padding-top: 60px;
+    padding-left: 40px;   
+    padding-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    
+
+    }
+    .card{
+      padding: 30px;
+      background-color: white;
+    }
+    .card h2{
+        font-weight: 400;
+    }
+    .card a{
+        color: red;
+    }
+    .card p{
+        font-weight: 100;
+    }
+
+
+
+
+
+
+/*About page */
+
+.About-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    width: 100%;
+    height: 100%;
+    padding : 20px;
+    
+}
+
+.About{
+    margin-top: 90px;
+    padding-left: 100px;
+    /* width: fit-content; */
+    
+
+}
+.About h1{
+    font-size: 50px;
+    font-weight: 400;
+
+}
+.about-image img{
+    margin-top: 90px;
+    padding-right: 100px;
+    width: 800px;
+}
+.About p{
+ padding-top: 20px;
+}
+
+/*About page */
+
+
+/*Log in Form page */
+
+.login-page-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Login-page{
+    margin-top: 90px;
+border: 50px;
+background-color: azure;
+align-items: center;
+}
+
+
+
+/*Log in Form page */
